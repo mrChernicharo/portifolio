@@ -8,23 +8,20 @@ function SkillTable(props) {
   <Container>
     <span>{props.title}</span>
       <table>
-        <tbody>
-          <tr>
             <td title="js"><img src={image} alt="js"/></td>
             <td title="js"><img src={image} alt="js"/></td>
             <td title="js"><img src={image} alt="js"/></td>
             <td title="js"><img src={image} alt="js"/></td>
             <td title="js"><img src={image} alt="js"/></td>
-          </tr>
-          <tr>
             <td title="js"><img src={image} alt="js"/></td>
             <td title="js"><img src={image} alt="js"/></td>
             <td title="js"><img src={image} alt="js"/></td>
             <td title="js"><img src={image} alt="js"/></td>
             <td title="js"><img src={image} alt="js"/></td>
-          </tr>
-
-        </tbody>
+            <td title="js"><img src={image} alt="js"/></td>
+            <td title="js"><img src={image} alt="js"/></td>
+            <td title="js"><img src={image} alt="js"/></td>
+            <td title="js"><img src={image} alt="js"/></td>
       </table>
   </Container>
   )

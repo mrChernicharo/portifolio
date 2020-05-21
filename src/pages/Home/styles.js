@@ -3,7 +3,7 @@ import homeBG from '../../assets/backgrounds/rio-bg.jpg';
 
 const Container = styled.div`
   width: 100%;
-  height: 720px;
+  height: 100vh;
   padding: 60px;
   display: flex;
 
@@ -34,9 +34,10 @@ const Container = styled.div`
   background-image:linear-gradient(
       rgba(0, 0, 0, 0.70), 
       rgba(0, 0, 200, 0.60)
-    ) ,url(${homeBG});
+    ) , url(${homeBG});
   background-size: cover;
   filter: grayscale(80%);
+
 `;
 
 export default Container;

@@ -3,7 +3,7 @@ import homeBG from '../../assets/backgrounds/dark-polygon-bg.png';
 
 const Container = styled.div`
   width: 100%;
-  height: 720px;
+  height: 100vh;
   padding: 60px;
   display: flex;
 
