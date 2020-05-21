@@ -6,7 +6,8 @@ function Home() {
   return (
     <>
       <NavBar />
-      <Container>
+      <Container style={{ paddingTop: '120px'}}>
+
 
       </Container>
 

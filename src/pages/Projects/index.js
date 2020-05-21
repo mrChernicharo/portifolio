@@ -15,7 +15,7 @@ function Home() {
   return (
     <>
       <NavBar />
-      <Container>
+      <Container style={{ paddingTop: '120px'}}>
         <ProjectCard/>
       </Container>
 

@@ -8,7 +8,7 @@ function Skills() {
     <>
       <NavBar />
 
-      <Container>
+      <Container style={{ paddingTop: '68px'}}>
         <div className="content">
           <h1>Skills</h1>
           <SkillTable title="Main Weapons"/>

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { shade } from 'polished';
 
 const Container = styled.div`
-  width: 600px;
+  width: 560px;
   height: 240px;
   margin: 0 auto;
   display: flex;
@@ -89,7 +89,8 @@ const Container = styled.div`
       position: absolute;
       align-self: center;
       top: 340px;
-      margin: -50px 0 0 10px;
+      margin: 10px 0 0 10px;
+
       :hover{
       width: 310px;
       margin-left: -26px;

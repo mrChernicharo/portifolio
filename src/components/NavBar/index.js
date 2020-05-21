@@ -1,9 +1,13 @@
 import React from 'react';
 import Container from './style';
-import logoImg from '../../assets/icons/005-tree.svg'
+import logoImg from '../../assets/icons/005-tree.svg';
+import menuBtn from '../../assets/icons/004-menu-2.svg';
 import NavButton from '../NavButton';
 
  function NavBar() {
+  // const [activeBtn, setActiveBtn] = useState(false);
+
+
    return(
     <Container>
     <div className="left-content">
@@ -19,6 +23,9 @@ import NavButton from '../NavButton';
       <NavButton title="Projects"></NavButton>
       <NavButton title="Skills"></NavButton>
       <NavButton title="About"></NavButton>
+    </div>
+    <div className="menu">
+      <img src={menuBtn} alt="menu"/>
     </div>
    </Container>
    )

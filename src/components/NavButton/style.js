@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const Container = styled.button`
+
   min-width: 90px;
   height: 30px;
   border-radius: 16px;
@@ -15,6 +16,11 @@ const Container = styled.button`
     }
     transition: ease-in-out 0.3s;
   }
+  :active {
+    background: #000;
+  }
+
+
 
 `;
 

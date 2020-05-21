@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Container from './style';
 
 function NavButton(props) {
+
   return(
     <Link 
       style={{textDecoration : 'none'}} 
@@ -10,7 +11,6 @@ function NavButton(props) {
       '/': `/${props.title.toLowerCase()}`
     }>
       <Container>
-
         <span>{props.title}</span>
       </Container>
     </Link>

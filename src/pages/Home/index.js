@@ -6,7 +6,7 @@ function Home() {
   return (
     <>
       <NavBar />
-      <Container>
+      <Container style={{ paddingTop: '120px'}}>
         <div className="text-box">
           <h1>Hello World!</h1>
           <h3>I am Felipe</h3>
