@@ -3,6 +3,7 @@ import NavBar from '../../components/NavBar';
 import SkillTable from '../../components/SkillTable';
 import Container from './styles'
 
+
 function Skills() {
   return (
     <>

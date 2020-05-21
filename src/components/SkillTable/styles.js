@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-  width: 260px;
+  width: 300px;
   height: auto;
   padding-left: 20px;
   /* border: 1px solid white; */
 
-  table {  
+  tr {  
+    width: 250px;
     margin: 10px 0 20px 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, 40px);
