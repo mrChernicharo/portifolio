@@ -4,6 +4,7 @@ import { shade } from 'polished';
 const Container = styled.div`
   width: 600px;
   height: 240px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -26,7 +27,7 @@ const Container = styled.div`
 
   }
 
-  div{
+  div.text-area{
     height: 90%;
     width: 260px;
     margin-right: 30px;
@@ -75,7 +76,41 @@ const Container = styled.div`
 
   }
 
+  @media (max-width: 670px) {
+    width: 316px;
+    height: 470px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: block;
 
+    img.gif {
+      position: absolute;
+      align-self: center;
+      top: 340px;
+      margin: -50px 0 0 10px;
+      :hover{
+      width: 310px;
+      margin-left: -26px;
+    }
+    }
+    div.text-area {
+      height: 40%;
+      width: 260px;
+      margin-top: 10px;
+      justify-content: space-around;
+      align-items: center;
+      align-self: center;
+
+      p{
+        align-content: center;
+        text-align: center;
+      }
+
+    }
+
+  }
 
 
  

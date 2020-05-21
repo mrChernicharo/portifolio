@@ -5,6 +5,7 @@ const Container = styled.div`
   width: 100%;
   height: 720px;
   padding: 60px;
+  margin: 0 auto;
   display: flex;
   background-image:linear-gradient(
       rgba(0, 0, 0, 0.70), 
