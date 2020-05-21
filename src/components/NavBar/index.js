@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from './style';
 import logoImg from '../../assets/icons/005-tree.svg';
-import menuBtn from '../../assets/icons/004-menu-2.svg';
+import menuBtn from '../../assets/icons/004-menu-1.svg';
 import NavButton from '../NavButton';
 
  function NavBar() {

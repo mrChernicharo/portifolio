@@ -3,7 +3,7 @@ import NavBar from '../../components/NavBar';
 import ProjectCard from '../../components/ProjectCard';
 import Container from './styles'
 
-function Home() {
+function Projects() {
   
     useEffect(() => {
       window.addEventListener('resize', () => {
@@ -22,4 +22,4 @@ function Home() {
     </>
   )
 }
-export default Home;
+export default Projects;

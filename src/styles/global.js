@@ -8,6 +8,7 @@ export default createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    -webkit-font-smoothing: antialiased;
 
     color: #fff;
   }

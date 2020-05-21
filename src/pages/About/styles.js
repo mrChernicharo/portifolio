@@ -1,43 +1,44 @@
 import styled from 'styled-components';
-import homeBG from '../../assets/backgrounds/dark-polygon-bg.png';
+import aboutBG from '../../assets/backgrounds/dark-polygon-bg2.png';
 
 const Container = styled.div`
   width: 100%;
-  height: 100vh;
-  padding: 60px;
+  height:200vh;
+  padding-top: 68px;
   display: flex;
+  /* border: 1px solid red; */
 
-  div.text-box{
-    min-width: 340px;
+  div.content{
+    margin: 0 auto;
+    min-width: 440px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    align-content: flex-end;
+    align-items: flex-start;
+    /* border: 1px solid green; */
+    background: rgba(0, 0, 0, 0.70);
+    h1 {
+      font-size: 52px;
+      font-weight: 300;
+      align-self: flex-start;
+      margin-left:30px;
+    }
+
+    .progress-bar{
+      width: 200px;
+    }
+
   }
 
-  h1 {
-    font-size: 52px;
-    font-weight: 300;
-  }
-  h3 {
-    font-size: 32px;
-    font-weight: 300;
-  }
-  p {
-    max-width: 180px;
-    text-align:right;
-    font-size: 30px;
-    font-weight: 300;
-  }
+
 
 
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.70), 
       rgba(0, 0, 200, 0.60)
-    ) ,url(${homeBG});
+    ) ,url(${aboutBG});
   background-size: cover;
-  filter: grayscale(80%);
-  transform: scaleX(-1);
+  filter: grayscale(10%);
 `;
 
 export default Container;
