@@ -17,10 +17,11 @@ function About() {
           <h1>About</h1>
 
           <SectionBox title="Bio">
-            <p>Hi, my name is Felipe Chernicharo, I live in Rio de Janeiro, Brazil.
-  I’ve been learning programming skills for almolst two years now, studying hard every day. 
-  I fell that the time has come for me to dive deeper and get an actual job as a developer. 
-  Think it's time to take my skills to the next level. </p>
+            <p>Hi there! My name is Felipe Chernicharo, I'm from Rio de Janeiro, Brazil and I love programming!</p>
+            <p>
+  I’ve been learning programming skills for almolst two years now, studying hard every day and
+  I fell that the time has come for me to dive deeper and take my skills to the next level. 
+  Think it's time to get an actual job as a developer. </p>
           </SectionBox>
 
           <SectionBox title="Education">

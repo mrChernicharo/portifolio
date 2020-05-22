@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from './styles';
-import { skills1, skills2, skills3 } from './skills';
+import { skills1, skills2, skills3 } from '../../pages/Skills/skills';
 
 
 function SkillTable(props) {

@@ -4,7 +4,7 @@ import { shade } from 'polished';
 const Container = styled.div`
   width: 560px;
   height: 240px;
-  margin: 0 auto;
+  margin: 10px auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -14,15 +14,22 @@ const Container = styled.div`
   border-radius: 32px;
   background: #c4c4c4;
 
+  :first-child{
+      /* margin-top: 180px; */
+    }
+
   img.gif {
-    width: 240px;
+    width: 200px;
     margin-left: 10px;
     border-radius: 6px;
     transition: ease-in-out 0.6s;
 
     :hover{
-      width: 310px;
+      margin: -20px;
+      width: 280px;
       margin-left: -40px;
+      border: 3px solid #26a532;
+
     }
 
   }
@@ -36,18 +43,34 @@ const Container = styled.div`
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;
-
+    
+    h1 {
+      font-size: 52px;
+      font-weight: 300;
+   }
     
     h3{
-     color: #515151;
-     font-weight: 300;
+      color: #515151;
+      font-size: 32px;
+      font-weight: 300;
     }
-    p{
+
+    p {
+      width: 200px;
       font-size: 12px;
       font-weight: 400;
+      text-align: end;
       color: #515151;
-
     }
+
+    div.text-box{
+    min-width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-content: flex-end;
+  }
+
     button{
       padding: 9px;
       margin-bottom: -4px;
@@ -74,40 +97,47 @@ const Container = styled.div`
 
     }
 
+
   }
 
   @media (max-width: 670px) {
-    width: 316px;
+    width: 290px;
     height: 470px;
-    margin: 0 auto;
+    /* margin: 0px auto; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    display: block;
+    /* display: block; */
+
+    :first-child{
+      /* margin-top: 780px; */
+    }
 
     img.gif {
-      position: absolute;
-      align-self: center;
+      /* position: absolute; */
+      margin-top: 20px;
+      margin-left: -30px;
       top: 340px;
-      margin: 10px 0 0 10px;
+      /* margin: 10px 0 0 10px; */
 
       :hover{
-      width: 310px;
-      margin-left: -26px;
-    }
+      width: 280px;
+      margin: 0px 20px 10px 0;
+     }
     }
     div.text-area {
-      height: 40%;
+      height: 240px;
       width: 260px;
-      margin-top: 10px;
-      justify-content: space-around;
-      align-items: center;
       align-self: center;
+      align-items: center;
+      justify-content: space-around;
+
 
       p{
         align-content: center;
         text-align: center;
       }
+
 
     }
 
