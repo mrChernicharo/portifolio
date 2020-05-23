@@ -3,14 +3,15 @@ import { Link } from 'react-router-dom';
 import Container from './style';
 
 function NavButton(props) {
+  const active = props.children
+  // console.log(active)
 
   return(
     <Link 
-      style={{textDecoration : 'none'}} 
       to={(props.title.toLowerCase() === 'home') ?
       '/': `/${props.title.toLowerCase()}`
     }>
-      <Container>
+      <Container active={active}>
         <span>{props.title}</span>
       </Container>
     </Link>

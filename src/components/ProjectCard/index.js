@@ -1,4 +1,5 @@
 import React from 'react';
+// import { Link } from 'react-router-dom';
 import Container from './styles';
 
 
@@ -14,10 +15,12 @@ function ProjectCard(props) {
     <div className="text-area">
       <h3>{props.title}</h3>
       <p>{props.description}</p>
-      <button>
-        <img src={gitLogo} alt="github"/>
-        <span>check it out</span>
-      </button>
+
+        <button>
+          <img src={gitLogo} alt="github"/>
+          <span>check it out</span>
+        </button>
+      
     </div>
     
   </Container>

@@ -4,7 +4,7 @@ import homeBG from '../../assets/backgrounds/rio-bg.jpg';
 const Container = styled.div`
   width: 100%;
   height: 100vh;
-  padding: 60px;
+  padding: 180px 0 60px 60px;
   display: flex;
 
   div.text-box{

@@ -7,7 +7,7 @@ import Container from './styles'
 function Skills() {
   return (
     <>
-      <NavBar />
+      <NavBar active="skills"/>
 
       <Container style={{ paddingTop: '68px'}}>
         <div className="content">

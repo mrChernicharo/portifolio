@@ -91,9 +91,15 @@ const Container = styled.div`
     }
 
     div.menu {
-      visibility: visible;
+      visibility: visible; 
+    }
 
-      
+    .dropdown{
+      width: 100px;
+      height: 100px;
+      background: #2b2b2b;
+      position: absolute;
+      right: 5%;
     }
   }
 

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React/*, { useEffect }*/ from 'react';
 import projects from './projects';
 import NavBar from '../../components/NavBar';
 import ProjectCard from '../../components/ProjectCard';
@@ -6,16 +6,16 @@ import Container from './styles'
 
 function Projects() {
   
-    useEffect(() => {
-      window.addEventListener('resize', () => {
-        const myWidth  = window.innerWidth;
-        const myHeight = window.innerHeight;
-        console.log(`width: ${myWidth} | height: ${myHeight}`);
-     })
-    },[])
+    // useEffect(() => {
+    //   window.addEventListener('resize', () => {
+    //     const myWidth  = window.innerWidth;
+    //     const myHeight = window.innerHeight;
+    //     console.log(`width: ${myWidth} | height: ${myHeight}`);
+    //  })
+    // },[])
   return (
     <>
-      <NavBar />
+      <NavBar active="projects"/>
       <Container>
         <ProjectCard
         title={projects[0].title}

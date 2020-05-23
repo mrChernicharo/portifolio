@@ -4,8 +4,9 @@ import logoImg from '../../assets/icons/005-tree.svg';
 import menuBtn from '../../assets/icons/004-menu-1.svg';
 import NavButton from '../NavButton';
 
- function NavBar() {
+ function NavBar(props) {
   // const [activeBtn, setActiveBtn] = useState(false);
+  // console.log(props)
 
 
    return(
@@ -19,12 +20,14 @@ import NavButton from '../NavButton';
     </div>  
 
     <div className="right-content">
-      <NavButton title="Home"></NavButton>
-      <NavButton title="Projects"></NavButton>
-      <NavButton title="Skills"></NavButton>
-      <NavButton title="About"></NavButton>
+     <NavButton title="Home" classname="home">{props.active === 'home'}</NavButton>
+      <NavButton title="Projects" classname="projects">{props.active === 'projects'}</NavButton>
+      <NavButton title="Skills" classname="skills">{props.active === 'skills'}</NavButton>
+      <NavButton title="About" classname="about">{props.active === 'about'}</NavButton>
     </div>
-    <div className="menu">
+    <div className="menu" 
+    // onClick={}
+    >
       <img src={menuBtn} alt="menu"/>
     </div>
    </Container>

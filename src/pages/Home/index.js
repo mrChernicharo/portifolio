@@ -14,8 +14,8 @@ function Home() {
 
   return (
     <>
-      <NavBar />
-      <Container style={{ paddingTop: '120px'}}>
+      <NavBar active="home"/>
+      <Container>
         <div className="text-box">
           <h1>Hello World!</h1>
           <h3>I am Felipe</h3>

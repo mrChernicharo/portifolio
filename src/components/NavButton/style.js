@@ -1,4 +1,6 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
+import { lighten } from 'polished';
+
 
 const Container = styled.button`
 
@@ -7,19 +9,26 @@ const Container = styled.button`
   border-radius: 16px;
   margin: 4px;
   background: #2b2b2b;
+  text-decoration : none;
+  cursor: pointer;
   
   :hover{
-    background: #c4c4c4;
+    background: ${lighten(0.3 ,'#c4c4c4')};
     span{
       color: #2b2b2b;
       font-weight: bold;
     }
     transition: ease-in-out 0.3s;
   }
-  :active {
-    background: #000;
-  }
-
+      
+  ${(props) => props.active && css`
+    span{
+      color: #2b2b2b;
+      font-weight: bold;
+     }
+    background-color: #c4c4c4;
+    }`}
+  
 
 
 `;
