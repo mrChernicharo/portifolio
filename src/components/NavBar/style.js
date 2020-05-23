@@ -1,13 +1,14 @@
-import styled from 'styled-components';
-import { shade } from 'polished';
+import styled, {css} from 'styled-components';
+import { shade, lighten } from 'polished';
+
+
 
 const Container = styled.div`
+  
   margin-top: 0px;
   z-index: 2;
   position: absolute;
-  /* position: fixed; */
-  /* top: -200px; */
-  /* bottom:  */
+
   width: 100%;
   height: 68px;
   background-color: #2b2b2b; 
@@ -24,18 +25,13 @@ const Container = styled.div`
     align-items: center;
     justify-content: flex-start;
 
-    img {
-      width: 42px;
-      height: 42px;
-      margin-right: 20px;
-
-    }
     div.text-content{
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       justify-content: center;
       margin-top: 5px;
+      margin-left: 50px;
 
       h3{
         min-width: 170px;
@@ -46,18 +42,24 @@ const Container = styled.div`
         min-width: 100px;
       }
     }
+      img.tree {
+        position: absolute;
+        width: 40px ;
+        height: 40px ;
+        margin: 0 20px 0 0 ;
+      }
   }
 
-  div.menu{
-    visibility: hidden;
+  div.menu-section{
+    display: none;
     img{
       width: 36px;
-      height: 36px;
+      height: 36px; 
       padding: 3px;
       border: 1px solid #fff;
       border-radius: 4px;
       margin: 8px 5px 0 0;
-      transition: ease-in 0.2s;
+      transition: ease-in 0.2s; 
 
       :hover {
         background-color: ${shade(0.3, '#527452')} 
@@ -82,27 +84,82 @@ const Container = styled.div`
 
   }
 
+  
+  /* olha o media query */
+
+  @media screen and (max-width: 760px) { 
 
 
 
-  @media screen and (max-width: 780px) {
-    div.right-content{
-      visibility: hidden;
-    }
+    div.menu-section{
 
-    div.menu {
-      visibility: visible; 
-    }
+      width: 100vw;
+      height: 100vh;
+      
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
 
-    .dropdown{
-      width: 100px;
-      height: 100px;
+      /*  */ /* <== */
+
       background: #2b2b2b;
-      position: absolute;
-      right: 5%;
-    }
-  }
+      display: flex;
+      /* display: none; */
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
 
+
+      .one, .two, .three{
+      display: absolute;
+      width: 100%;
+      height: 4px;
+      margin: 5px auto;
+      background: #fff;
+      border-radius: 2px;
+    }
+    
+
+
+   
+
+    .menu-toggle{
+      /* display: none; */
+
+      position: absolute;
+      top: 22px;
+      right: 30px;
+      width: 30px;
+      height: 40px;
+
+    }
+
+
+    .links{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    
+      a{
+        margin: 20px;
+        padding: 7px 20px;
+        text-decoration: none;
+
+        border-radius: 16px;
+        cursor: pointer;
+
+        &:hover {
+          background: ${lighten(0.3,'#2b2b2b')}
+        }
+        /* display: none; */
+
+
+      }
+    }
+  } 
+}
 `;
 
 export default Container;

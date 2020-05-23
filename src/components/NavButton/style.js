@@ -1,8 +1,8 @@
 import styled, {css} from 'styled-components';
 import { lighten } from 'polished';
 
-
 const Container = styled.button`
+
 
   min-width: 90px;
   height: 30px;
@@ -28,7 +28,13 @@ const Container = styled.button`
      }
     background-color: #c4c4c4;
     }`}
+
+
+  @media screen and (max-width: 760px){
+    display: none;
+  }
   
+
 
 
 `;
