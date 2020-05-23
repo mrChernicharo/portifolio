@@ -15,7 +15,8 @@ function Projects() {
     // },[])
   return (
     <>
-      <NavBar active="projects"/>
+      {/* <NavBar active="projects"/> */}
+      <NavBar />
       <Container>
         <ProjectCard
         title={projects[0].title}

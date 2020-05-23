@@ -11,7 +11,9 @@ import France from '../../assets/icons/france.svg';
 function About() {
   return (
     <>
-      <NavBar active="about"/>
+      {/* <NavBar active="about"/> */}
+      <NavBar />
+
       <Container>
         <div className="content">
           <h1>About</h1>

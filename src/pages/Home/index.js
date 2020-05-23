@@ -4,17 +4,18 @@ import Container from './styles'
 
 function Home() {
 
-  useEffect(() => {
-    window.addEventListener('resize', () => {
-      const myWidth  = window.innerWidth;
-      const myHeight = window.innerHeight;
-      console.log(`width: ${myWidth} | height: ${myHeight}`);
-   })
-  },[])
+  // useEffect(() => {
+  //   window.addEventListener('resize', () => {
+  //     const myWidth  = window.innerWidth;
+  //     const myHeight = window.innerHeight;
+  //     console.log(`width: ${myWidth} | height: ${myHeight}`);
+  //  })
+  // },[])
 
   return (
     <>
-      <NavBar active="home"/>
+      {/* <NavBar active="home"/> */}
+      <NavBar/>
       <Container>
         <div className="text-box">
           <h1>Hello World!</h1>
