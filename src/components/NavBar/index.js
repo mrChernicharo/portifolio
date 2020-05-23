@@ -1,25 +1,59 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import logoImg from '../../assets/icons/005-tree.svg';
+
 import Container from './style'
+
+function DropdownMenu(){
+
+  function DropdownItem(props) {
+    return (
+      <div className="menu-item">
+        {props.children}
+      </div>
+    );
+  }
+
+   return (
+    <div className="dropdown">
+
+        <div className="menu">
+          <Link to="/">
+            <DropdownItem>Home</DropdownItem> 
+          </Link>
+          <Link to="/projects">
+            <DropdownItem>Projects</DropdownItem> 
+          </Link>
+          <Link to="/skills">
+           <DropdownItem>Skills</DropdownItem> 
+          </Link>
+          <Link to="/about">
+            <DropdownItem>About</DropdownItem> 
+          </Link>
+
+      </div>
+    </div>
+   );
+}
 
 function NavBar(props) {
 
   return(
     <Container>
 
+
       <nav className="navbar">
+        <div className="left-content">
+          <img className="tree" src={logoImg} alt="tree-logo"/> 
+          <div className="text-content">
+            <h3>Felipe Chernicharo</h3>
+            <h4>Dev Portifolio</h4>
+          </div> 
+        </div> 
         <ul className="navbar-nav">{props.children}
-        <NavItem icon="home" >
-          <p>hello</p>
+        <NavItem icon="menu" >
+          <DropdownMenu />
         </NavItem>        
-        <NavItem icon="projects" >
-          <p>hello</p>
-        </NavItem>
-        <NavItem icon="skills" >
-          <p>hello</p>
-        </NavItem>
-        <NavItem icon="about" >
-          <p>hello</p>
-        </NavItem>
         </ul>
       </nav>
     </Container>
@@ -33,9 +67,9 @@ function NavItem(props) {
 
   return (
     <li className="nav-item">
-      <a href="#" className="icon-button" onClick={() => setOpen(!open)}>
+      <button className="icon-button" onClick={() => setOpen(!open)}>
         {props.icon}
-      </a>
+      </button>
       {open && props.children}
 
     </li>
