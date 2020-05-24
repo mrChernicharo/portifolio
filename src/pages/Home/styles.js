@@ -4,8 +4,8 @@ import homeBG from '../../assets/backgrounds/rio-bg.jpg';
 const Container = styled.div`
   width: 100%;
   height: 100vh;
-  padding: 180px 0 60px 60px;
   display: flex;
+  padding: 140px 0 60px 60px;
 
   div.text-box{
     min-width: 340px;
@@ -37,6 +37,19 @@ const Container = styled.div`
     ) , url(${homeBG});
   background-size: cover;
   filter: grayscale(80%);
+
+@media screen and (max-width: 500px) {
+  padding: 140px 0 60px 0;
+  div.text-box {
+    margin: 0 auto;
+    
+    align-items: center;
+    align-content: center;
+  }
+  p{
+    text-align: center;
+  }
+}
 
 `;
 

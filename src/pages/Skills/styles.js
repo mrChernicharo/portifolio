@@ -9,9 +9,8 @@ const Container = styled.div`
   justify-content: center;
 
   div.content{
-    min-width: 480px;
-    /* height: 700px; */
-    /* border: 1px solid red;  */
+    min-width: 320px;
+
     display: flex;
     flex-direction: column;
     align-items:flex-start;

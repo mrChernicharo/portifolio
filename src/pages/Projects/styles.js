@@ -4,8 +4,9 @@ import projectsBG from '../../assets/backgrounds/dark-polygon-bg.png';
 const Container = styled.div`
   width: 100%;
   height: 100%;
-  padding-top: 120px;
+  padding-top: 60px;
   margin: 0 auto;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,10 +18,15 @@ const Container = styled.div`
   background-size: cover;
   filter: grayscale(0%);
 
-  @media screen and(max-width: 670px) {
-    /* margin-top: 1820px; */
-    
+  h1{
+    position: relative;
+    font-size: 46px;
+    font-weight: 300;
+    margin-bottom: 20px;
+
   }
+
+
 
 `;
 

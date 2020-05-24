@@ -18,6 +18,7 @@ function Projects() {
       {/* <NavBar active="projects"/> */}
       <NavBar />
       <Container>
+      <h1>Projects</h1>
         <ProjectCard
         title={projects[0].title}
         description={projects[0].description}

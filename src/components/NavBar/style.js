@@ -15,7 +15,7 @@ a {
 }
 
 .navbar{
-  border: 1px solid green;
+
   height: 60px;
   background-color: #242526;
   padding: 0 1rem;
@@ -25,8 +25,8 @@ a {
   justify-content: space-between;
 }
 .left-content{
-  border: 1px solid green;
-  min-width: 260px;
+
+  min-width: 220px;
   height: 100%;
 }
 .tree{
@@ -37,12 +37,20 @@ a {
 }
 .text-content{
   margin-top: 10px;
-  margin-left: 50px;
+  /* margin-left: 30px; */
+  display: flex;
+  flex-direction: column;
   h3{
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 300;
+    align-self: flex-end;
   }
   h4{
     font-size: 12px;
+    font-weight: 500;
+    align-self: flex-end;
+
+
   }
 }
 
@@ -74,6 +82,7 @@ a {
   justify-content: center;
   transition: filter 300ms;
   font-size: 14px;
+
 }
 
 .icon-button:hover {
@@ -85,7 +94,7 @@ a {
 .dropdown {
   position: absolute;
   top: 58px;
-  width: 200px;
+  width: 160px;
   background-color: #242526;
   border: 1px solid #dadce1;
   border-radius: 12px;
@@ -94,19 +103,30 @@ a {
   z-index: 2;
   transform: translateX(-32%);
   transition: 0.5s ease-in-out;
+  
 }
 .menu-item {
-  height: 50px;
+  height: 30px;
   display: flex;
   align-items: center;
   border-radius: 20px;
   transition: background 0.5s;
   padding: 0.5rem;
   font-size: 12px;
+  margin: 8px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu-item:hover{
   background-color: #525357;
+}
+
+.menu{
+  margin: 8px 0;
+
 }
 
 `;
