@@ -42,7 +42,7 @@ const Container = styled.div`
   filter: grayscale(10%);
 
 
-}
+
 `;
 
 export default Container;
