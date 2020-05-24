@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React /*, {useEffect}*/ from 'react';
 import NavBar from '../../components/NavBar';
 import Container from './styles'
 
@@ -18,11 +18,11 @@ function Home() {
       <NavBar/>
       <Container>
         <div className="text-box">
-          <h1>Hello World!</h1>
+          <h1>Hello World</h1>
           <h3>I am Felipe</h3>
           <br />
           <br />
-          <p>Welcome to my developer portifolio</p>
+          <p>Welcome to my developer portifolio!</p>
         </div>
       </Container>
 

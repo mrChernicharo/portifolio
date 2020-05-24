@@ -43,11 +43,10 @@ const Container = styled.div`
     height: 10px;
     width: 90px;
   }
-  /* li{
-    color: #ccc;
-    font-size: 12px;
-    font-weight: 300;
-  } */
+
+@media screen and (max-width: 440px) {
+  width: 100vw;
+}
 
 `;
 

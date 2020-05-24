@@ -15,13 +15,13 @@ function About() {
       <NavBar />
 
       <Container>
-        <div className="content">
+        <div className="content" style={{paddingBottom:'40px'}}>
           <h1>About</h1>
 
           <SectionBox title="Bio">
             <p>Hi there! My name is Felipe Chernicharo, I'm from Rio de Janeiro, Brazil and I love programming!</p>
             <p>
-  I’ve been learning programming skills for almolst two years now, studying hard every day and
+  I’ve been learning programming for almost two years now, studying hard every day.
   I fell that the time has come for me to dive deeper and take my skills to the next level. 
   Think it's time to get an actual job as a developer. </p>
           </SectionBox>
@@ -102,11 +102,25 @@ function About() {
               <li>Udemy MySQL</li>
             </ul>
           </SectionBox>
-          <SectionBox title="Real World Experience"></SectionBox>
-          <SectionBox title="Goals">
-            <p></p>
-
-            <p>No better moment to learn than now...</p>
+          <SectionBox title="Real World Experience">
+            <ul>
+              <li style={{paddingBottom:'30px'}}>Webmaster of Laços psychology clinic's website
+                <br />
+                <a href="http://www.clinicalacos.com.br" target="blank">clinicalacos.com.br</a>
+              </li>
+              <li>Webmaster of music group Sexteto Sucupira's website
+                <br />
+                <a href="http://www.sextetosucupira.com" target="blank">sextetosucupira.com</a>
+              </li>
+            </ul>
+          </SectionBox>
+          <SectionBox title="Goals" >
+            <p>I love learning new stuff and expanding my comprehension on how things work under the hood.</p>
+            <p>I love to code and to solve problems. Facing challenges is like fuel to me.</p> 
+            <p>As you might notice I have a music degree. A good share of my life I have spent working as a musician, 
+              I still love to play, but I decided to take a hard turn and plunge deep into programming.</p> 
+            <p>I believe these difficult times have proven every day that the choice I've made is correct.</p>
+            <p>...All that said, let's keep studying! For there's no better moment to learn than now...</p>
           </SectionBox>
         </div>
       </Container>

@@ -14,9 +14,6 @@ const Container = styled.div`
   border-radius: 32px;
   background: #c4c4c4;
 
-  :first-child{
-      /* margin-top: 180px; */
-    }
 
   img.gif {
     width: 200px;
@@ -71,6 +68,10 @@ const Container = styled.div`
     align-content: flex-end;
   }
 
+  a{
+    text-decoration: none;
+  }
+
     button{
       padding: 9px;
       margin-bottom: -4px;
@@ -81,6 +82,7 @@ const Container = styled.div`
       justify-content: space-between;
       background: #26a532;
       transition: ease-in 0.2s;
+      cursor: pointer;
 
       :hover{
         background-color: ${shade(0.3, '#26a532')}

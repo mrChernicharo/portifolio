@@ -3,10 +3,17 @@ import aboutBG from '../../assets/backgrounds/dark-polygon-bg2.png';
 
 const Container = styled.div`
   width: 100%;
-  height:200vh;
+  height:100%;
 
   display: flex;
-  /* border: 1px solid red; */
+
+
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.70), 
+      rgba(50, 0, 190, 0.60)
+    ) ,url(${aboutBG});
+  background-size: cover;
+  filter: grayscale(10%);
 
   div.content{
     margin: 0 auto;
@@ -15,7 +22,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* border: 1px solid green; */
+
     background: rgba(0, 0, 0, 0.70);
     h1 {
       font-size: 48px;
@@ -28,18 +35,19 @@ const Container = styled.div`
       font-weight: 400;
     }
 
+
     .progress-bar{
       width: 200px;
     }
 
-  }
+    a{
+      line-height: 20px;
+      text-decoration: none;
+      color: orange;
 
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.70), 
-      rgba(0, 0, 200, 0.60)
-    ) ,url(${aboutBG});
-  background-size: cover;
-  filter: grayscale(10%);
+    }
+
+  }
 
 
 

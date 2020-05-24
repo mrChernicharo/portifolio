@@ -17,24 +17,27 @@ function Projects() {
     <>
       {/* <NavBar active="projects"/> */}
       <NavBar />
-      <Container>
+      <Container style={{paddingBottom: '40px'}}> 
       <h1>Projects</h1>
         <ProjectCard
         title={projects[0].title}
         description={projects[0].description}
         gif={projects[0].gif}
+        url={projects[0].url}
         />
+
         <ProjectCard
         title={projects[1].title}
         description={projects[1].description}
         gif={projects[1].gif}
-
+        url={projects[1].url}
         />
+
         <ProjectCard
         title={projects[2].title}
         description={projects[2].description}
         gif={projects[2].gif}
-
+        url={projects[2].url}
         />
       </Container>
 
