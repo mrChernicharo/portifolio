@@ -117,7 +117,7 @@ function About() {
           <SectionBox title="Goals" >
             <p>I love learning new stuff and expanding my comprehension on how things work under the hood.</p>
             <p>I love to code and to solve problems. Facing challenges is like fuel to me.</p> 
-            <p>As you might notice I have a music degree. A good share of my life I have spent working as a musician, 
+            <p>As you might notice I have a music degree. A good share of my life I have spent working as a musician. 
               I still love to play, but I decided to take a hard turn and plunge deep into programming.</p> 
             <p>I believe these difficult times have proven every day that the choice I've made is correct.</p>
             <p>...All that said, let's keep studying! For there's no better moment to learn than now...</p>

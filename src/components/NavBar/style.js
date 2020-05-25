@@ -28,8 +28,10 @@ a {
 
   min-width: 220px;
   height: 100%;
+  margin-left: -10px;
 }
 .tree{
+
   position: absolute;
   top: 1.3%;
   width: 40px;
@@ -37,7 +39,6 @@ a {
 }
 .text-content{
   margin-top: 10px;
-  /* margin-left: 30px; */
   display: flex;
   flex-direction: column;
   h3{
