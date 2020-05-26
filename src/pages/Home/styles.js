@@ -8,8 +8,8 @@ const Container = styled.div`
   display: flex;
   padding: 140px 0 60px 60px;
   background-image: linear-gradient(
-      rgba(0, 0, 0, 0.60), 
-      rgba(0, 0, 0, 0.70)) ,url(${homeBG});
+      rgba(0, 0, 0, 0.20), 
+      rgba(0, 0, 0, 0.30)) ,url(${homeBG});
   background-size: cover;
   
   div.text-box{

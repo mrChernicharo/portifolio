@@ -34,14 +34,12 @@ function DropdownMenu(){
       </div>
     </div>
    );
-}
+  }
 
 function NavBar(props) {
 
   return(
     <Container>
-
-
       <nav className="navbar">
         <div className="left-content">
           <img className="tree" src={logoImg} alt="tree-logo"/> 

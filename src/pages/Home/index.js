@@ -1,4 +1,4 @@
-import React /*, {useEffect}*/ from 'react';
+import React, { useState } /*, {useEffect}*/ from 'react';
 import NavBar from '../../components/NavBar';
 import Container from './styles'
 import githubImg from '../../assets/icons/github.svg';
@@ -7,13 +7,43 @@ import whatsappImg from '../../assets/icons/whatsapp.svg';
 import gmailImg from '../../assets/icons/gmail.svg';
 import faceImg from '../../assets/icons/009-facebook.svg';
 
-function Home() {
 
-  // useEffect(() => {
-  //   window.addEventListener('resize', () => {
-  //     const myWidth  = window.innerWidth;
-  //     const myHeight = window.innerHeight;
-  //     console.log(`width: ${myWidth} | height: ${myHeight}`);
+
+function SideBar(props){
+  
+  return (
+    <div style={{
+      position: 'absolute',
+      width: `${props.width}`,
+      height: '30px',
+      marginLeft: `${props.margin}`,
+      fontSize: '12px',
+      background: '#242526',
+      border: '1px solid #dadce1',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      borderRadius: '4px',
+      cursor: 'text',
+    }}>{props.text}</div>
+    );
+  }
+  
+  
+  
+  function Home() {
+    const [open, setOpen] = useState(false);
+    const [open2, setOpen2] = useState(false);
+  
+    function handleSideBar1(){
+      setOpen(!open);
+    }
+    function handleSideBar2(){
+      setOpen2(!open2);
+    }
+    
+    // useEffect(() => {
+      
   //  })
   // },[])
 
@@ -31,6 +61,17 @@ function Home() {
         </div>
 
         <div className="follow-me">
+
+          <div className="info" onClick={handleSideBar1}>
+            <img src={whatsappImg} alt="whatsapp"/>
+            {open && <SideBar text="+55 21 98878-8359" width="180px" margin="110px"/>}
+          </div>  
+
+          <div className="info" onClick={handleSideBar2}>
+            <img src={gmailImg} alt="gmail"/>
+            {open2 && <SideBar text="felipe.chernicharo@gmail.com" width="240px" margin="140px"/>}
+          </div>
+
           <div className="info">
             <a href="https://www.facebook.com/felipe.chernicharo" target="blank">
               <img src={faceImg} alt="linkedin link"/>
@@ -43,23 +84,11 @@ function Home() {
             </a>
           </div>  
 
-          <div className="info">
+          <div className="info" style={{marginTop: '-6px'}}>
             <a href="https://www.linkedin.com/in/felipe-chernicharo-27ba911a8/" target="blank">
               <img src={linkedinImg} alt="linkedin link"/>
             </a>
           </div>  
-
-          <div className="info">
-
-            <img src={whatsappImg} alt="whatsapp"/>
-
-            {/* <p>+55 21 98878-8359</p> */}
-          </div>  
-          <div className="info">
-            <img src={gmailImg} alt="gmail"/>
-            {/* <p>felipe.chernicharo@gmail.com</p> */}
-          </div>
-
         </div>
       </Container>
 
