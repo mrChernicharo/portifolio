@@ -29,7 +29,7 @@ const Container = styled.div`
     }
     p {
       max-width: 180px;
-      text-align:right;
+      text-align: right;
       font-size: 30px;
       font-weight: 300;
     }
@@ -44,7 +44,7 @@ const Container = styled.div`
     position: absolute;
     top: 60px;
     left: 0;
-    width: 50px;
+    width: 44px;
     height: 210px;
 
     background: #242526;
@@ -56,18 +56,16 @@ const Container = styled.div`
     .info{
       /* border: 1px solid green; */
       width: 100%;
-      /* margin: 2px 0 2px 20px; */
       display: flex;
       align-items: center;
       justify-content:center;
       cursor: pointer;
     }
+    
     h4{
       position: absolute;
       top: 0;
       margin-left: -2px;
-
-      /* left: 20px; */
     }
     p{
       font-size: 12px;
@@ -77,8 +75,8 @@ const Container = styled.div`
       
     }
     img{
-      width:30px;
-      height: 30px;
+      width:26px;
+      height: 26px;
 
     }
   }
@@ -93,16 +91,14 @@ const Container = styled.div`
     
     align-items: center;
     align-content: center;
+
+    p{
+      text-align: center;
+    }
   }
-  p{
-    text-align: center;
-  }
+
 }
 
 `;
 
 export default Container;
-
-
-/** 
-    ) */
