@@ -3,7 +3,7 @@ import React from 'react';
 import Container from './styles';
 
 
-import gitLogo from '../../assets/icons/github.svg';
+import gitLogo from '../../assets/icons/github_black.svg';
 
 // import gif1 from '../../assets/gifs/mosquito_killer_ok.gif';
 
