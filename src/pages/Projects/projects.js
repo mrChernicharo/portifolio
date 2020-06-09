@@ -1,8 +1,15 @@
 import gif0 from '../../assets/gifs/mosquito_killer_ok.gif';
 import gif1 from '../../assets/gifs/app-lista-tarefas.gif';
 import gif2 from '../../assets/gifs/car_rush_ok.gif';
+import gif3 from '../../assets/gifs/go-marketplace.gif';
 
 const projects = [
+    { 
+    title: 'GoMarketplace', 
+    description:'Ecommerce-like Mobile App. Written in Typescript, using React Native and Android Studio. Just add products to the Cart and let\'s go shopping!', 
+    url: 'https://github.com/mrChernicharo/goMarketplace',
+    gif: gif3,
+  },
   { 
     title: 'Mosquito Killer', 
     description:'Python3/pygame project made for the Introduction to Software Development class in the Software Analysis and Developmet graduation course at UNIGRANRIO University', 

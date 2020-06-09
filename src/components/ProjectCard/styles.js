@@ -10,22 +10,26 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   /* border: 1px solid red; */
-  padding-left: 28px;
+  padding-left: 42px;
   border-radius: 32px;
   background: #c4c4c4;
 
 
   img.gif {
-    width: 200px;
+    max-width: 200px;
+    max-height: 240px;
     margin-left: 10px;
     border-radius: 6px;
     transition: ease-in-out 0.6s;
 
     :hover{
-      margin: -20px;
-      width: 280px;
-      margin-left: -40px;
+      /* margin: -20px; */
+      /* /* max-width: 230px; */
+      max-height: 300px;
+      max-width: 260px;
+      margin-left: -30px;
       border: 3px solid #26a532;
+      z-index: 2;
 
     }
 
@@ -103,12 +107,19 @@ const Container = styled.div`
   }
 
   @media (max-width: 670px) {
-    width: 290px;
-    height: 470px;
-    /* margin: 0px auto; */
+    padding: 0;
+    margin: 0;
+    /* width: 290px;
+    height: 470px; */
+    height: 100%;
+    width: 300px;
+    margin: 12px auto;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* border: 1px solid green; */
+
     /* display: block; */
 
     :first-child{
@@ -117,22 +128,32 @@ const Container = styled.div`
 
     img.gif {
       /* position: absolute; */
-      margin-top: 20px;
-      margin-left: -30px;
-      top: 340px;
+      margin-top: 24px;
+      /* margin-left: -30px; */
+      /* top: 340px; */
+      align-self: center;
+      align-items: center;
       /* margin: 10px 0 0 10px; */
+      /* border: 1px solid green; */
+
 
       :hover{
-      width: 280px;
-      margin: 0px 20px 10px 0;
+      /* width: 280px; */
+      z-index: 2;
+      margin: 0;
+
      }
     }
     div.text-area {
+      margin: 0;
+      padding: 0;
       height: 240px;
       width: 260px;
       align-self: center;
       align-items: center;
       justify-content: space-around;
+      margin-bottom: 10px;
+      /* border: 1px solid green; */
 
 
       p{
