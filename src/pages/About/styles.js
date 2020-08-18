@@ -34,6 +34,7 @@ const Container = styled.div`
     }
     p.red-line {
       color: #f54b42;
+      font-size: 14px;
     }
 
     .progress-bar {

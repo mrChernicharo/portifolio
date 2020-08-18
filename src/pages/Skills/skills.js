@@ -34,6 +34,9 @@ import logo30 from "../../assets/icons/sqlite.png";
 import logo31 from "../../assets/icons/bash.png";
 import logo32 from "../../assets/icons/gitlab-tile.svg";
 import logo33 from "../../assets/icons/github_black.svg";
+import logo34 from "../../assets/icons/sass.png";
+import logo35 from "../../assets/icons/mobirise.png";
+import logo36 from "../../assets/icons/ngrx.svg";
 
 export const images = [
   logo,
@@ -70,6 +73,9 @@ export const images = [
   logo31,
   logo32,
   logo33,
+  logo34,
+  logo35,
+  logo36,
 ];
 
 export const skills1 = [
@@ -79,35 +85,38 @@ export const skills1 = [
   { name: "Css", img: `${images[6]}` },
   { name: "Python", img: `${images[2]}` },
   { name: "Angular", img: `${images[4]}` },
+  { name: "RxJS", img: `${images[9]}` },
   { name: "React", img: `${images[7]}` },
   { name: "React Native", img: `${images[8]}` },
   { name: "Php", img: `${images[3]}` },
-  { name: "RxJS", img: `${images[9]}` },
 ];
 export const skills2 = [
   { name: "Apple", img: `${images[10]}` },
   { name: "Visual Studio Code", img: `${images[11]}` },
-  { name: "firebase", img: `${images[18]}` },
-  { name: "Postgres", img: `${images[12]}` },
   { name: "Node", img: `${images[16]}` },
+  { name: "Postgres", img: `${images[12]}` },
   { name: "Docker", img: `${images[17]}` },
   { name: "MySQL", img: `${images[13]}` },
   { name: "MongoDB", img: `${images[14]}` },
   { name: "SQL", img: `${images[15]}` },
   { name: "SqLite", img: `${images[30]}` },
+  { name: "Oh my ZSH", img: `${images[28]}` },
   { name: "Bash", img: `${images[31]}` },
-  { name: "GitLab", img: `${images[32]}` },
-  { name: "GitHub", img: `${images[33]}` },
+  { name: "Vim", img: `${images[29]}` },
+  { name: "ngRx", img: `${images[36]}` },
 ];
 export const skills3 = [
+  { name: "GitHub", img: `${images[33]}` },
+  { name: "GitLab", img: `${images[32]}` },
+  { name: "firebase", img: `${images[18]}` },
   { name: "Material Design", img: `${images[27]}` },
+  { name: "Bootstrap", img: `${images[25]}` },
+  { name: "Sass", img: `${images[34]}` },
+  { name: "Mobirise", img: `${images[35]}` },
   { name: "Figma", img: `${images[20]}` },
   { name: "DBeaver", img: `${images[21]}` },
   { name: "Insomnia", img: `${images[22]}` },
   { name: "Wamp", img: `${images[23]}` },
   { name: "Mamp", img: `${images[24]}` },
-  { name: "Bootstrap", img: `${images[25]}` },
   { name: "Notion", img: `${images[26]}` },
-  { name: "Oh my ZSH", img: `${images[28]}` },
-  { name: "Vim", img: `${images[29]}` },
 ];

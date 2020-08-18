@@ -136,7 +136,7 @@ function About() {
               <li>Curso em vídeo javascript</li>
               <li>Curso em vídeo html 5, css 3 and JS</li>
               <li>Rocketseat React Native</li>
-              <li>Udemy MySQL</li>
+              <li>Udemy Advanced and Object-Oriented Javascript</li>
             </ul>
           </SectionBox>
           <SectionBox title="Real World Experience">
