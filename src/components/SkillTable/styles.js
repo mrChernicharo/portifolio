@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { lighten } from 'polished';
+import styled from "styled-components";
+import { lighten } from "polished";
 
 const Container = styled.div`
   width: 300px;
@@ -7,7 +7,7 @@ const Container = styled.div`
   padding-left: 20px;
   /* border: 1px solid white; */
 
-  tr {  
+  tr {
     width: 250px;
     margin: 10px 0 20px 0;
     display: grid;
@@ -16,29 +16,26 @@ const Container = styled.div`
     row-gap: 10px;
     /* border: 1px solid white; */
 
-
     td {
-    /* width: 40px;*/
-    height: 40px; 
-    background: #666;
-    border-radius: 4px;
-    /* border: 1px solid white; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+      /* width: 40px;*/
+      height: 40px;
+      background: #666;
+      border-radius: 4px;
+      /* border: 1px solid white; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-    &:hover {
-          background: ${lighten('0.2', '#666')}
-        } 
-
-    } 
+      &:hover {
+        background: ${lighten("0.2", "#666")};
+      }
+    }
 
     img {
-      width:28px;
-      height: 28px;      
-    } 
+      width: 30px;
+      height: 30px;
+    }
   }
-  
 `;
 
 export default Container;
