@@ -4,6 +4,7 @@ import gif2 from "../../assets/gifs/car_rush_ok.gif";
 import gif3 from "../../assets/gifs/go-marketplace.gif";
 import gif4 from "../../assets/gifs/i-recipe.gif";
 import gif5 from "../../assets/gifs/angular_crud.gif";
+import gif6 from "../../assets/gifs/ecoleta.gif";
 
 const projects = [
   {
@@ -12,6 +13,13 @@ const projects = [
       "Angular CRUD app powered by Angular Material and JSON.Server. Load, create, update and delete products.",
     url: "https://github.com/mrChernicharo/angular-crud",
     gif: gif5,
+  },
+  {
+    title: "Ecoleta",
+    description:
+      "React Native Mobile App. Written in Typescript, using Expo. Geolocation and zipcode services provided through API integration!",
+    url: "https://github.com/mrChernicharo/goMarketplace",
+    gif: gif6,
   },
   {
     title: "I-Recipe",
@@ -35,18 +43,18 @@ const projects = [
     gif: gif0,
   },
   {
-    title: "App Lista Tarefas",
-    description:
-      "Task list App. Written in Php. Create, update, delete and check your tasks! Just type your chores in and never again you'll miss an appointment. Get organized! Make a list!",
-    url: "https://www.github.com/mrChernicharo/app-lista-tarefas",
-    gif: gif1,
-  },
-  {
     title: "Car Rush",
     description:
       "My first game! Build with Python3 and pygame! Try to stay alive by dodging furious cars that really don't seem to care if you're in their way!",
     url: "https://www.github.com/mrChernicharo/car-rush",
     gif: gif2,
+  },
+  {
+    title: "App Lista Tarefas",
+    description:
+      "Task list App. Written in Php. Create, update, delete and check your tasks! Just type your chores in and never again you'll miss an appointment. Get organized! Make a list!",
+    url: "https://www.github.com/mrChernicharo/app-lista-tarefas",
+    gif: gif1,
   },
   // { title: '', description:'', gif: gif3 },
 ];

@@ -27,7 +27,8 @@ const Container = styled.div`
       max-height: 300px;
       max-width: 260px;
       margin-left: -30px;
-      border: 3px solid #26a532;
+      border: 6px solid #26a532;
+      border-radius: 14px;
       z-index: 2;
     }
   }
@@ -54,20 +55,22 @@ const Container = styled.div`
     }
 
     p {
-      width: 200px;
+      width: 230px;
       font-size: 12px;
       font-weight: 400;
       text-align: end;
       color: #fff;
     }
 
-    div.text-box {
+    /* div.text-box {
+      border: 1px solid green;
+
       min-width: 340px;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       align-content: flex-end;
-    }
+    } */
 
     a {
       text-decoration: none;
@@ -147,7 +150,6 @@ const Container = styled.div`
       align-items: center;
       justify-content: space-around;
       margin-bottom: 10px;
-      /* border: 1px solid green; */
 
       p {
         align-content: center;
