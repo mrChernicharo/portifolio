@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { shade } from 'polished';
+import styled from "styled-components";
+import { shade } from "polished";
 
 const Container = styled.div`
   width: 560px;
@@ -9,11 +9,10 @@ const Container = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /* border: 1px solid red; */
+  border: 1px solid #515151;
   padding-left: 42px;
   border-radius: 32px;
-  background: #c4c4c4;
-
+  background: transparent;
 
   img.gif {
     max-width: 200px;
@@ -22,7 +21,7 @@ const Container = styled.div`
     border-radius: 6px;
     transition: ease-in-out 0.6s;
 
-    :hover{
+    :hover {
       /* margin: -20px; */
       /* /* max-width: 230px; */
       max-height: 300px;
@@ -30,12 +29,10 @@ const Container = styled.div`
       margin-left: -30px;
       border: 3px solid #26a532;
       z-index: 2;
-
     }
-
   }
 
-  div.text-area{
+  div.text-area {
     height: 90%;
     width: 260px;
     margin-right: 30px;
@@ -44,14 +41,14 @@ const Container = styled.div`
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;
-    
+
     h1 {
       font-size: 52px;
       font-weight: 300;
-   }
-    
-    h3{
-      color: #515151;
+    }
+
+    h3 {
+      color: #fff;
       font-size: 32px;
       font-weight: 300;
     }
@@ -61,25 +58,27 @@ const Container = styled.div`
       font-size: 12px;
       font-weight: 400;
       text-align: end;
-      color: #515151;
+      color: #fff;
     }
 
-    div.text-box{
-    min-width: 340px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    align-content: flex-end;
-  }
+    div.text-box {
+      min-width: 340px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      align-content: flex-end;
+    }
 
-  a{
-    text-decoration: none;
-  }
+    a {
+      text-decoration: none;
+    }
 
-    button{
+    button {
       padding: 9px;
+      margin-top: 4px;
       margin-bottom: -4px;
       border-radius: 18px;
+      border: none;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -88,22 +87,19 @@ const Container = styled.div`
       transition: ease-in 0.2s;
       cursor: pointer;
 
-      :hover{
-        background-color: ${shade(0.3, '#26a532')}
+      :hover {
+        background-color: ${shade(0.3, "#26a532")};
       }
-            
-      img{
+
+      img {
         width: 20px;
         margin: 0 10px 0 0;
       }
-      span{
+      span {
         font-weight: 500;
         margin-right: 6px;
       }
-
     }
-
-
   }
 
   @media (max-width: 670px) {
@@ -122,7 +118,7 @@ const Container = styled.div`
 
     /* display: block; */
 
-    :first-child{
+    :first-child {
       /* margin-top: 780px; */
     }
 
@@ -136,13 +132,11 @@ const Container = styled.div`
       /* margin: 10px 0 0 10px; */
       /* border: 1px solid green; */
 
-
-      :hover{
-      /* width: 280px; */
-      z-index: 2;
-      margin: 0;
-
-     }
+      :hover {
+        /* width: 280px; */
+        z-index: 2;
+        margin: 0;
+      }
     }
     div.text-area {
       margin: 0;
@@ -155,20 +149,12 @@ const Container = styled.div`
       margin-bottom: 10px;
       /* border: 1px solid green; */
 
-
-      p{
+      p {
         align-content: center;
         text-align: center;
       }
-
-
     }
-
   }
-
-
- 
-  
 `;
 
 export default Container;
