@@ -129,7 +129,7 @@ function About() {
               <li>Rocketseat ES6</li>
               <li>
                 Cod3r - Angular 9 <br />
-                Angular 9, Typescript, Angular Material, JSON Server.
+                Typescript, Angular Material, JSON Server.
               </li>
               <li>Rocketseat NodeJS</li>
               <li>Scrimba Python course</li>

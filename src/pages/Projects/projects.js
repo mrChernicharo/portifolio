@@ -15,11 +15,11 @@ const projects = [
     gif: gif5,
   },
   {
-    title: "Ecoleta",
+    title: "GoMarketplace",
     description:
-      "React Native Mobile App. Written in Typescript, using Expo. Geolocation and zipcode services provided through API integration!",
+      "Ecommerce-like Mobile App. Written in Typescript, using React Native and Android Studio. Just add products to the Cart and let's go shopping!",
     url: "https://github.com/mrChernicharo/goMarketplace",
-    gif: gif6,
+    gif: gif3,
   },
   {
     title: "I-Recipe",
@@ -29,11 +29,11 @@ const projects = [
     gif: gif4,
   },
   {
-    title: "GoMarketplace",
+    title: "Ecoleta",
     description:
-      "Ecommerce-like Mobile App. Written in Typescript, using React Native and Android Studio. Just add products to the Cart and let's go shopping!",
+      "React Native Mobile App. Written in Typescript, using Expo. Geolocation and zipcode services provided by API integration!",
     url: "https://github.com/mrChernicharo/goMarketplace",
-    gif: gif3,
+    gif: gif6,
   },
   {
     title: "Mosquito Killer",
